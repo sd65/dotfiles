@@ -1,0 +1,15 @@
+[user]                                                                                                                                                                                                         
+        name = Sylvain DOIGNON
+        email = sylvain.doignon@socgen.com
+[color]
+        diff = always
+[alias]
+        a = add 
+        c = commit
+        p = push
+        o = checkout
+        s = status
+        b = branch
+        l = !git log --graph --pretty=format:'>>> %C(yellow)%s %Creset <<<%n%CblueHash: %H%n%CblueAuthor: %aN%n%CblueDate: %cd%n%CblueBody: %n%n' --date=relative
+        ll = !git l --stat
+        alias = !git config --list | awk '/alias/ {print substr($0,7)}'
